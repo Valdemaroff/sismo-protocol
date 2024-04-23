@@ -50,6 +50,22 @@ Deployed contracts can be found [here](https://docs.sismo.io/sismo-docs/deployed
 
 ## Usage
 ### Installation
+First we need to install yarn using curl
+```
+sudo apt update
+curl --version
+sudo apt install curl
+curl -sL https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
+echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
+sudo apt install yarn
+yarn --version
+```
+Also if you need to upgrade yarn use this guideline
+```
+sudo apt install npm
+sudo curl --compressed -o- -L https://yarnpkg.com/install.sh | bash
+```
+Go on with SISMO installing
 ```
 yarn
 ```
